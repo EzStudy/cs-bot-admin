@@ -10,7 +10,9 @@ import java.util.Map;
 public class CategoryController {
 
     @PostMapping(value = "/api/categoryList")
-    public String callAPI(HttpServletRequest request, HttpServletResponse response) {
+    public String callAPI(@RequestBody Map<String, Object> body, HttpServletRequest request, HttpServletResponse response) {
+        System.out.println(body.toString());
+        System.out.println(request);
         System.out.println("test");
         return "test";
     }
