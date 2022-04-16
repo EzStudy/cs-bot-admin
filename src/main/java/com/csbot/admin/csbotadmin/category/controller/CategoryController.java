@@ -9,7 +9,7 @@ import java.util.Map;
 @RestController("/api")
 public class CategoryController {
 
-    @RequestMapping(value = "/categoryList" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
+    @PostMapping(value = "/categoryList")
     public String callAPI(@RequestBody Map<String, Object> params, HttpServletRequest request, HttpServletResponse response) {
         System.out.println("test");
         return "test";
