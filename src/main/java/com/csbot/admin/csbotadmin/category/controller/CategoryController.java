@@ -6,10 +6,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
-@RestController("/api")
+@RestController()
 public class CategoryController {
 
-    @PostMapping(value = "/categoryList")
+    @PostMapping(value = "/api/categoryList")
     public String callAPI(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("test");
         return "test";
