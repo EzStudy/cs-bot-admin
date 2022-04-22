@@ -1,4 +1,4 @@
-package com.csbot.admin.csbotadmin.category.controller;
+package com.csbot.admin.csbotadmin.domain.category.controller;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -6,10 +6,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
-@RestController()
+@RestController
 public class CategoryController {
 
-    @PostMapping(value = "/api/categoryList")
+    @PostMapping(value = "/categoryList")
     public String callAPI(@RequestBody Map<String, Object> body, HttpServletRequest request, HttpServletResponse response) {
         System.out.println(body.toString());
         System.out.println(request);
